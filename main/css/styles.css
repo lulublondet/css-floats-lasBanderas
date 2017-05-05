@@ -1,0 +1,28 @@
+body {
+	text-align: center;
+}
+
+.container1 {
+	border: 1px solid black;
+}
+
+.container1 div {
+	height: 120px;
+	width : 200px;
+}
+
+
+.container1 > div{
+background-color: yellow;
+} 
+
+
+.container1 div:nth-child(3)
+{
+	background-color: blue;
+}
+
+
+.container1 div:nth-child(4) {
+	background-color: red;
+}
