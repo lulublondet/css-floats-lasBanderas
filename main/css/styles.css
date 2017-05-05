@@ -1,16 +1,15 @@
 body {
 	text-align: center;
+	border:1px solid black;
 }
 
-.container1, .container2 {
-	border: 1px solid black;
+
+
+.container2, .container3 {
+	overflow: hidden;
 }
 
-.container2 {
-	overflow: auto;
-}
-
-.container1 div, .container2 div{
+.container1 div, .container2 div, .container3 div{
 	height: 120px;
 	width : 200px;
 	border: 1px solid black;
@@ -21,21 +20,31 @@ body {
 	float: left;
 }
 
+.container3 div {
+	float: right;
+}
 
 .container1 > div, 
-.container2 > div {
-				   background-color: yellow;
-				 }	 
+.container2 > div,
+.container3 > div {
+	background-color: yellow;
+				 				}	 
 
 
 .container1 div:nth-child(3), 
-.container2 div:nth-child(3) 
-							{
-							 background-color: blue;
+.container2 div:nth-child(3),
+.container3 div:nth-child(3) {
+		background-color: blue;
 	                           }
 
 
 .container1 div:nth-child(4), 
-.container2 div:nth-child(4)  {
+.container2 div:nth-child(4),
+.container3 div:nth-child(4)  {
 	background-color: red;
-}
+							}
+
+.container2 div:nth-child(5),
+.container3 div:nth-child(5)  {
+	background-color: white;
+							}
