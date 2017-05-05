@@ -2,27 +2,40 @@ body {
 	text-align: center;
 }
 
-.container1 {
+.container1, .container2 {
 	border: 1px solid black;
 }
 
-.container1 div {
+.container2 {
+	overflow: auto;
+}
+
+.container1 div, .container2 div{
 	height: 120px;
 	width : 200px;
+	border: 1px solid black;
 }
 
 
-.container1 > div{
-background-color: yellow;
-} 
-
-
-.container1 div:nth-child(3)
-{
-	background-color: blue;
+.container2 div {
+	float: left;
 }
 
 
-.container1 div:nth-child(4) {
+.container1 > div, 
+.container2 > div {
+				   background-color: yellow;
+				 }	 
+
+
+.container1 div:nth-child(3), 
+.container2 div:nth-child(3) 
+							{
+							 background-color: blue;
+	                           }
+
+
+.container1 div:nth-child(4), 
+.container2 div:nth-child(4)  {
 	background-color: red;
 }
